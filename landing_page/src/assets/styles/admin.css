@@ -1,0 +1,89 @@
+/* Sidebar Menu */
+#sidebar .sidebar-item > .sidebar-link {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding: 0 1.5rem;
+  line-height: 1;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+#sidebar .sidebar-item > .sidebar-link:hover,
+#sidebar .sidebar-item.active > .sidebar-link {
+  background-color: #435ebe;
+  color: #ffffff;
+}
+
+#sidebar .sidebar-link i {
+  font-size: 1.1rem;
+}
+
+/* Submenu */
+#sidebar .submenu .submenu-item a {
+  display: block;
+  padding: 0.6rem 2.5rem;
+  color: #6c757d;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+#sidebar .submenu .submenu-item a:hover {
+  background: transparent;
+  color: #435ebe;
+}
+
+#sidebar .submenu .submenu-item a.active {
+  color: #435ebe;
+  font-weight: 600;
+}
+
+/* Cards chung */
+.card {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Stats Card */
+.stats-card {
+  border-radius: 16px;
+}
+
+/* Stats Icon - Đảm bảo icon nằm chính giữa */
+.stats-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.1rem;
+  flex-shrink: 0;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.stats-card:hover .stats-icon,
+.dashboard-card:hover .stats-icon {
+  transform: scale(1.08);
+}
+
+/* Gradient colors */
+.stats-icon.purple { background: linear-gradient(135deg, #7367f0, #9f86ff); }
+.stats-icon.blue   { background: linear-gradient(135deg, #5e72e4, #825ee4); }
+.stats-icon.green  { background: linear-gradient(135deg, #28c76f, #48d4b4); }
+.stats-icon.red    { background: linear-gradient(135deg, #ea5455, #f5365c); }
+
+/* Fix Bootstrap Icons alignment (chỉ khai báo 1 lần) */
+.bi {
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}
